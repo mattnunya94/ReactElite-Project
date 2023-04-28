@@ -1,4 +1,3 @@
-
 name: Build and Deploy Workflow
 
 on:
@@ -63,8 +62,8 @@ jobs:
       with:
         server_address: 'smtp.gmail.com'
         server_port: 587
-        username: ${{ secrets.mattnunya94@gmail.com }}
-        password: ${{ secrets.1Through9$ }}
+        username: ${{ secrets.EMAIL_USERNAME }}
+        password: ${{ secrets.EMAIL_PASSWORD }}
         subject: 'Build Failed for ReactElite-Project'
         body: 'The build for the ReactElite-Project has failed. Please check the workflow logs for more information.'
         from: 'sender@example.com'
